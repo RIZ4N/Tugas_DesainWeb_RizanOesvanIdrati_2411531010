@@ -1,18 +1,19 @@
 // /service-worker.js
 const CACHE_NAME = 'rizan-pwa-v7';
-const OFFLINE_PAGE = '/offline.html';
+const OFFLINE_PAGE = 'offline.html';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/about.html',
-  '/contact.html',
-  '/offline.html',
-  '/manifest.json',
-  '/style.css?v=1.3',
-  '/profile.jpg?v=20251006',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  './',
+  'index.html',
+  'about.html',
+  'contact.html',
+  'offline.html',
+  'manifest.json',
+  'style.css?v=1.3',
+  'profile.jpg?v=20251006',
+  'icons/icon-192.png',
+  'icons/icon-512.png'
 ];
+
 
 self.addEventListener('install', event => {
   console.log('[SW] install');
