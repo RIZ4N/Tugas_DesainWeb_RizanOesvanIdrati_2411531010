@@ -1,17 +1,17 @@
 // /service-worker.js
-const CACHE_NAME = 'rizan-pwa-v7';
-const OFFLINE_PAGE = 'offline.html';
+const CACHE_NAME = 'rizan-pwa-v8';
+const OFFLINE_PAGE = '/offline.html';
 const ASSETS = [
   './',
-  'index.html',
-  'about.html',
-  'contact.html',
-  'offline.html',
-  'manifest.json',
-  'style.css',
-  'profile.jpg',
-  'icons/icon-192.png',
-  'icons/icon-512.png'
+  '/index.html',
+  '/about.html',
+  '/contact.html',
+  '/offline.html',
+  '/manifest.json',
+  '/style.css',
+  '/profile.jpg',
+  '/icon-192.png',
+  '/icon-512.png'
 ];
 
 
