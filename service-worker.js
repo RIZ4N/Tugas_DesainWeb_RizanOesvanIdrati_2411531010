@@ -6,8 +6,8 @@ const ASSETS_TO_CACHE = [
   'about.html',
   'offline.html',
   'style.css',
-  './icons/icon-192.png-192.png',
-  './icons/icon-192.png-192.png'
+  '/icons/icon-192.png-192.png',
+  '/icons/icon-192.png-192.png'
 ];
 
 // Install event - cache aset statis
