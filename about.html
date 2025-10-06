@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Saya - RIZAN</title>
+  <link rel="stylesheet" href="/style.css?v=1.3" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2c5aa0">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">RIZAN</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content-card about-card">
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="/profile.jpg?v=20251006" alt="Foto Rizan">
+        </div>
+        <div class="about-info">
+          <h1>Tentang Saya</h1>
+          <p class="meta">RIZAN OESVAN IDRATI &nbsp; | &nbsp; 2411531010</p>
+          <p>Sedang belajar desain web dan PWA.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Rizan Oesvan Idrati — Aplikasi ini mendukung PWA (installable & offline).</p>
+    </div>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').catch(function(){});
+      });
+    }
+  </script>
+</body>
+</html>

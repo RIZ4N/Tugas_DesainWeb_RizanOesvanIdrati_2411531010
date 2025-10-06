@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - RIZAN</title>
+  <link rel="stylesheet" href="/style.css?v=1.3" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2c5aa0">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">RIZAN</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content-card contact-wrapper">
+      <h1>Contact Me</h1>
+      <p class="contact-subtitle">Hubungi Rizan</p>
+
+      <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="nama">Nama <span class="required">*</span></label>
+          <input type="text" id="nama" name="nama" required placeholder="Nama lengkap">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="email@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="kategori">Kategori Pesan <span class="required">*</span></label>
+          <select id="kategori" name="kategori" required>
+            <option value="">-- Pilih Kategori --</option>
+            <option value="pertanyaan">Pertanyaan</option>
+            <option value="saran">Kritik</option>
+            <option value="masalah">Saran</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan <span class="required">*</span></label>
+          <textarea id="pesan" name="pesan" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Ingin menerima balasan?</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="balasan" value="ya" checked>
+              <span>Ya</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="balasan" value="tidak">
+              <span>Tidak</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Rizan Oesvan Idrati — Aplikasi ini mendukung PWA (installable & offline).</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const nama = document.getElementById('nama').value;
+      alert('Form berhasil dikirim!\n\nTerima kasih ' + nama + ', kami telah menerima pesan Anda.');
+      document.getElementById('contactForm').reset();
+    }
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').catch(function(){});
+      });
+    }
+  </script>
+</body>
+</html>

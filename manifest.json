@@ -1,0 +1,12 @@
+{
+  "name": "Rizan Oesvan Idrati",
+  "short_name": "RIZAN",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#eaf2ff",
+  "theme_color": "#2c5aa0",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
