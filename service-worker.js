@@ -8,8 +8,8 @@ const ASSETS = [
   'contact.html',
   'offline.html',
   'manifest.json',
-  'style.css?v=1.3',
-  'profile.jpg?v=20251006',
+  'style.css',
+  'profile.jpg',
   'icons/icon-192.png',
   'icons/icon-512.png'
 ];
