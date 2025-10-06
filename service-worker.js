@@ -1,5 +1,5 @@
 const CACHE_NAME = 'rizan-pwa-v8';
-const OFFLINE_PAGE = '/offline.html';
+const OFFLINE_PAGE = './offline.html';
 const ASSETS = [
   './',
   './index.html',

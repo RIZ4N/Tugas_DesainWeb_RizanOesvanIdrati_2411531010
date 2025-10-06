@@ -1,7 +1,7 @@
 {
   "name": "Rizan Oesvan Idrati",
   "short_name": "RIZAN",
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#eaf2ff",
   "theme_color": "#2c5aa0",
