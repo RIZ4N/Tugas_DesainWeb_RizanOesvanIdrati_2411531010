@@ -10,8 +10,8 @@ const ASSETS = [
   '/manifest.json',
   '/style.css',
   '/profile.jpg',
-  '/icon-192.png',
-  '/icon-512.png'
+  'icons/icon-192.png',
+  'icons/icon-512.png'
 ];
 
 
